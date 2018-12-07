@@ -2,6 +2,8 @@ import java.util.ArrayList;
 import java.util.Arrays;
 
 public class WhaleWatcher {
+	
+	static ArrayList<Whale> whales = new ArrayList<Whale>();
 
 	public static void main(String[] args) {
 		
@@ -20,12 +22,23 @@ public class WhaleWatcher {
 		whales.add(right);
 		whales.add(blue);
 		whales.add(sperm);
-		whales.add(humpback);
+		whales.add(humpback);	
 		
 		for(Whale whale:whales) { 			// for loop to show each whale in the whales arraylist
-			whale.outputWhaleDetails();  	// calling the outputWhaleDetails method from the whale class
+		whale.outputWhaleDetails();  	// calling the outputWhaleDetails method from the whale class
+			
+		whale.outputAtlanticWhales();
+		}
 	
 		}
+		
+		public static void atlanticWhales() {
+			
+			for(Whale whale:whales) {
+
+				whale.outputAtlanticWhales();
+
+	        }
 		
 
 	}

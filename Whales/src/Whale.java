@@ -23,6 +23,18 @@ public class Whale extends Animal {
 		System.out.println("Length in meters: " + this.getLength());
 		System.out.println("\n");
 	}
+	
+	 public void outputAtlanticWhales() {
+	    	
+	    if(this.getMainOcean() == "Atlantic") {  // if getMainOcean is equal to Atlantic, do this
+	    	System.out.println("Name: " + this.getName());
+			System.out.println("Main ocean: " + this.getMainOcean());
+			System.out.println("Weight in tonnes: " + this.getWeight());
+			System.out.println("Max Speed: " + this.getMaxSpeed());
+			System.out.println("Length in meters: " + this.getLength());
+			System.out.println("\n");
+	    }
+	}
 
 	public String getMainOcean() {
 		return mainOcean;
