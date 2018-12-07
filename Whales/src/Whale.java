@@ -13,6 +13,16 @@ public class Whale extends Animal {
 		this.maxSpeed = maxSpeed;
 		this.length = length;
 	}
+	
+	
+	public void outputWhaleDetails() {
+		System.out.println("Name: " + this.getName());
+		System.out.println("Main ocean: " + this.getMainOcean());
+		System.out.println("Weight in tonnes: " + this.getWeight());
+		System.out.println("Max Speed: " + this.getWeight());
+		System.out.println("Length in meters: " + this.getLength());
+		System.out.println("\n");
+	}
 
 	public String getMainOcean() {
 		return mainOcean;
