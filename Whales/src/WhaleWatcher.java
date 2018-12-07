@@ -7,7 +7,8 @@ public class WhaleWatcher {
 
 	public static void main(String[] args) {
 		
-		createWhales();		// calling the createWhales method
+		// calling the createWhales method
+		createWhales();		
 	}
 		
 	private static void createWhales() {
@@ -17,18 +18,23 @@ public class WhaleWatcher {
 		Whale sperm = new Whale("Sperm", "Atlantic", 1900, 20, 40);
 		Whale humpback = new Whale("Humpback", "Antarctic", 919, 13, 13);
 		
-		ArrayList<Whale> whales = new ArrayList<Whale>(); // Use an array to store the four Whale objects
+		// Using  array to store the four Whale objects
+		ArrayList<Whale> whales = new ArrayList<Whale>(); 
 		
-		whales.add(right);
+		// adding whales to array
+		
+		whales.add(right);			    
 		whales.add(blue);
 		whales.add(sperm);
-		whales.add(humpback);	
+		whales.add(humpback);
 		
-		for(Whale whale:whales) { 			// for loop to show each whale in the whales arraylist
-		whale.outputWhaleDetails();  	// calling the outputWhaleDetails method from the whale class
+		// for loop to show each whale in the whales arraylist
+		for(Whale whale:whales) { 
 			
-		whale.outputAtlanticWhales();
-		}
+	    // calling the outputWhaleDetails method from the whale class
+			whale.outputWhaleDetails();  	
+			whale.outputAtlanticWhales();
+			}
 	
 		}
 		
@@ -39,7 +45,6 @@ public class WhaleWatcher {
 				whale.outputAtlanticWhales();
 
 	        }
-		
 
 	}
 
